@@ -47,7 +47,7 @@ namespace CAS_ERGOSUM.Methodes
             Dictionary<Categorie, int> Retour = new Dictionary<Categorie, int>();
             foreach (Categorie C in Categorie.CollClasseCategorie)
             {
-                Retour.Add(C, C.());
+                Retour.Add(C, C.LesJouets.Count);
             }
             return Retour;
         }

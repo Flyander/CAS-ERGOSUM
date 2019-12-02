@@ -23,7 +23,7 @@ namespace CAS_ERGOSUM.Methodes
             _code=leCode;
             _libelle=leLibelle;
 
-            _lesJouets=new ArrayList();
+            LesJouets=new ArrayList();
 
             Categorie.CollClasseCategorie.Add(this);
         }
@@ -33,6 +33,7 @@ namespace CAS_ERGOSUM.Methodes
         
         public int Code { get => _code; set => _code = value; }
         public string Libelle { get => _libelle; set => _libelle = value; }
+        public ArrayList LesJouets { get => _lesJouets; set => _lesJouets = value; }
         #endregion
 
         #region Methodes
