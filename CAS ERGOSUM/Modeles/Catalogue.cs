@@ -42,6 +42,16 @@ namespace CAS_ERGOSUM.Methodes
             return resultat;
         }
 
+        public Dictionary<Catalogue,int> statCateg()
+        {
+            Dictionary<Catalogue, int> Retour = new Dictionary<Catalogue, int>();
+            foreach (Catalogue C in CollClasseCatalogue)
+            {
+                Retour.Add(C, C.GetQuantiteDistribue());
+            }
+            return Retour;
+        }
+
         #endregion
     }
 }
