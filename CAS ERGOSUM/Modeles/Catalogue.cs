@@ -25,12 +25,32 @@ namespace CAS_ERGOSUM.Methodes
         #endregion
 
         #region getter-setter
-        public int Annee { get => _annee; set => _annee = value; }
+        public int GetAnnee { get => _annee; set => _annee = value; }
         internal Dictionary<Jouet, int> DicoQuantite { get => dicoQuantite; set => dicoQuantite = value; }
         #endregion
 
 
         #region methode
+
+        public int GetQuantiteDistribue()
+        {
+            int resultat = 0;
+            foreach (KeyValuePair<Jouet, int> j in DicoQuantite)
+            {
+                resultat = j.Value + resultat;
+            }
+            return resultat;
+        }
+
+        public Dictionary<Catalogue,int> statCateg()
+        {
+            Dictionary<Catalogue, int> Retour = new Dictionary<Catalogue, int>();
+            foreach (Catalogue C in CollClasseCatalogue)
+            {
+                Retour.Add(C, C.GetQuantiteDistribue());
+            }
+            return Retour;
+        }
 
         #endregion
     }
