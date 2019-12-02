@@ -35,7 +35,7 @@ namespace CAS_ERGOSUM.Methodes
         public int GetQuantiteDistribue()
         {
             int resultat = 0;
-            foreach (KeyValuePair < Jouet,int> j in DicoQuantite)
+            foreach (KeyValuePair<Jouet, int> j in DicoQuantite)
             {
                 resultat = j.Value + resultat;
             }
