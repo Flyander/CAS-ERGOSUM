@@ -9,7 +9,7 @@ namespace CAS_ERGOSUM.Methodes
 {
     class Catalogue
     {
-        #region Atribut
+        #region Attributs
         private int _annee;
         public static ArrayList CollClasseCatalogue = new ArrayList();
         private Dictionary<Jouet, int> dicoQuantite;
