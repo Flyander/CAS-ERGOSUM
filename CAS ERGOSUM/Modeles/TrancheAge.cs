@@ -22,6 +22,7 @@ namespace CAS_ERGOSUM.Methodes
             Code = code;
             AgeMin = ageMin;
             AgeMax = ageMax;
+            CollClassTrancheAge.Add(this);
         }
         #endregion
 
