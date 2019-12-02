@@ -50,14 +50,11 @@ namespace CAS_ERGOSUM.Methodes
         }
         public bool Convient(int unAge)
         {
-            if (unAge > _lesTranches.AgeMax)
+            if (unAge > _lesTranches.AgeMax && unAge < _lesTranches.AgeMin)
             {
                 return false;
             }
-           if(unAge < _lesTranches.AgeMin)
-            {
-                return false;
-            }
+           
             else
             {
                 return true;
