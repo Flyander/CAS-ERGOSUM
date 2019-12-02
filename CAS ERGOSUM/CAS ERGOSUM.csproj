@@ -52,7 +52,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Methodes\Catalogue.cs" />
+    <Compile Include="Modeles\Catalogue.cs" />
+    <Compile Include="Modeles\Categorie.cs" />
+    <Compile Include="Modeles\Jouet.cs" />
+    <Compile Include="Modeles\TrancheAge.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
