@@ -44,9 +44,21 @@ namespace CAS_ERGOSUM.Methodes
 
         public Dictionary<Categorie,int> statCateg()
         {
+            int totalCategorie = 0;
             Dictionary<Categorie, int> Retour = new Dictionary<Categorie, int>();
             foreach (Categorie C in Categorie.CollClasseCategorie)
             {
+                foreach(Jouet j in C.LesJouets)
+                {
+                    foreach (KeyValuePair<Jouet, int> param in DicoQuantite)
+                    {
+                        if (j == param.Key)
+                        {
+                            totalCategorie += param.Value;
+                        }
+                        
+                    }
+                }
                 Retour.Add(C, C.LesJouets.Count);
             }
             return Retour;
